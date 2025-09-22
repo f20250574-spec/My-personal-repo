@@ -1,3 +1,13 @@
 .ssh/
-snap
-.Xauthority/
+snap/
+.Xauthority
+.bash_history
+.bash_profile
+.bash_logout
+.bashrc
+.cache/
+.profile
+.local/
+.lesshst
+.joe_state
+.config/
