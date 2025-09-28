@@ -11,3 +11,6 @@ snap/
 .lesshst
 .joe_state
 .config/
+.vscode/
+*.exe
+*.out
