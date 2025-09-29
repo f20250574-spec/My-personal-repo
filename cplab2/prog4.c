@@ -3,16 +3,8 @@
 void main() {
 
 int a,b,c,d,e;
-printf("enter subj 1\n");
-scanf("%d", &a);
-printf("enter subj 2\n");
-scanf("%d", &b);
-printf("enter subj 3\n");
-scanf("%d", &c);
-printf("enter subj 4\n");
-scanf("%d", &d);
-printf("enter subj 5\n");
-scanf("%d", &e);
+printf("enter marks of subjects 1, 2 ,3, 4, 5:\n");
+scanf("%d\n %d\n %d\n %d\n %d", &a, &b, &c, &d, &e);
 
 int agg= (a+b+c+d+e)/5;
 
