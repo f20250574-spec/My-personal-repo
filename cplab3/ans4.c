@@ -19,7 +19,7 @@ case 6:
 case 9: 
 case 11: printf("30 days"); break;
 case 2:printf("28 days"); break;
-adefault:printf("Enter the num of a month from 1-12");
+default:printf("Enter the num of a month from 1-12");
 }
 
 }
