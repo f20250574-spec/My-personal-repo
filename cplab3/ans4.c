@@ -1,26 +1,25 @@
 #include <stdio.h>
 
 void main() {
-char choice;
-printf("! for red\n@ for yellow\n# for blue\n$ for violet\n* for green\n^ for indigo\n& for orange\n");
-scanf("%c",&choice);
-switch (choice) {
-	case '!': printf("red");
-		break;
-	case '#': printf("blue");
-		break;
-	case '@': printf("yellow");
-		break;
-	case '$': printf("violet");
-		break;
-	case '*': printf("green");
-		break;
-	case '^': printf("indigo");
-		break;
-	case '&': printf("orange");
-		break;
-	default:
-		printf("invalid input");
-		break;
+
+int num;
+printf("enter the number of the month");
+scanf("%d", &num);
+
+switch(num) {
+case 1: 
+case 3: 
+case 5: 
+case 7: 
+case 8: 
+case 10:  
+case 12: printf("31 days"); break;
+case 4: 
+case 6: 
+case 9: 
+case 11: printf("30 days"); break;
+case 2:printf("28 days"); break;
+default:printf("Enter the num of a month from 1-12");
 }
+
 }
