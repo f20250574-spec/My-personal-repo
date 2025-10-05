@@ -17,9 +17,6 @@ switch (c) {
 	case 3: printf("%d", x*y);
 		break;
 	case 4: printf("%d", x/y);
-		break;
-	default: printf("ensure you have entered valid integer values");
-		break;
 }
 
 }
