@@ -16,9 +16,10 @@ do {
 		sum = sum + (int)z;
 		z = z - (int)z;
 		z = z*10;
+		printf("hiiiii u are so nicuu");
 		continue;
 	}
-	z = n * pow(10,-1);
+	z = n/10;
 	printf("hi");
 } while (1<2);
 
