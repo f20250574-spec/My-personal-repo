@@ -1,43 +1,26 @@
 #include <stdio.h>
-#include <math.h>
 void main() {
-int n, i=1, sum=0, reverse=0;
-float z, y;
+int n, i=1, sum=0, reverse=0,z, y;
 
 
 printf("enter the number: ");
 scanf("%d", &n);
-z=n;
 do {
-	if (z>n) {
-		break;
-	}
-	if (z<10) {
-		sum = sum + (int)z;
-		z = z - (int)z;
-		z = z*10;
-		printf("hiiiii u are so nicuu");
-		continue;
-	}
-	z = n/10;
-	printf("hi");
-} while (1<2);
-
-y=sum;
-do {
-	if (y>sum) {
-		break;
-	}
-	if (y<10) {
-		reverse = reverse + (int)z*((int)pow(10,i));
-		z = z - (int)z;
-		z = z*10;
-		i--;
-		continue;
-	}
+	z = n%(10*i);
+	y= z - n%(10*(i-1));
+	sum +=y;
 	i++;
-	z = n/10;
-} while (1<2);
+} while (1);
+
+i=0;
+while (z !=n) {
+	i++;
+	z = n%(10*i);
+}
+for (;i!=0;) {
+	z=(n-n%(10*i-1))/(i-1);
+	reverse += z;
+}
 
 if (sum*reverse==n) {
 	printf("magic no");
