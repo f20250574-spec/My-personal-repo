@@ -1,32 +1,27 @@
 #include <stdio.h>
 void main() {
-int n, i=1, sum=0, reverse=0,z, y;
+int n, sum=0, reverse=0,z, y,o;
 
 
 printf("enter the number: ");
 scanf("%d", &n);
+o=n;
 do {
-	z = n%(10*i);
-	y= z - n%(10*(i-1));
-	sum +=y;
-	i++;
-} while (1);
+	z=n%10;
+	sum+=z;
+	n=n/10;
+} while (n>=1);
 
-i=0;
-while (z !=n) {
-	i++;
-	z = n%(10*i);
+y=sum;
+while (y>=1)
+{
+	z=y%10;
+	reverse= reverse*10+ z;
+	y=y/10;
 }
-for (;i!=0;) {
-	z=(n-n%(10*i-1))/(i-1);
-	reverse += z;
-}
+if (reverse*sum==o)
+	printf("magic no\n");
 
-if (sum*reverse==n) {
-	printf("magic no");
-}
-else {
-	printf("nope");
-}
-
+else
+	printf("nope\n");
 }
