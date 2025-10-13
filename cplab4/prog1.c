@@ -13,6 +13,5 @@ if (n>1 && n==i) {
 } else {
 	printf("Not a prime\n");
 }
-printf("%d", 0%5);
 }
 
