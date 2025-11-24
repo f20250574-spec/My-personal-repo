@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_factors(n) {
+void print_factors(int n) {
 int i;
 	for (i=1;i<=n;i++) {
 		if (n%i==0) {

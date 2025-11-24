@@ -1,5 +1,5 @@
 #include <stdio.h>
-void check_magic(n) {
+void check_magic(int n) {
 int  sum=0, reverse=0,z, y,o;
 
 o=n;
