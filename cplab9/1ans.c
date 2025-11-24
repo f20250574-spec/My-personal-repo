@@ -10,9 +10,12 @@ fgets(middle, sizeof(middle), stdin);
 printf("enter last name: ");
 fgets(last, sizeof(last) , stdin);
 
-strcat(first, " ");
-strcat(middle, first);
-strcat(first, " ");
-strcat(last, first);
+//strcat(first, " ");
+strcat(first, middle);
+//strcat(first, " ");
+strcat(first, last);
+first[strcspn(first, "\n")] = ' ';
+first[strcspn(first, "\n")] = ' ';
+
 printf("%s", first);
 }
