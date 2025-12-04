@@ -4,10 +4,7 @@
 void main () {
 	char str1[20], str2[20];
 
-	printf("enter string one and then string 2");
-//	fgets(str1, sizeof(str1), stdin);
-//	fgets(str2, sizeof(str2), stdin);
-
+	printf("enter string one and then string 2: ");
 
 	gets(str1);
 	gets(str2);

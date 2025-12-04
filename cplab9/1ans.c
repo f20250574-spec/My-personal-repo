@@ -2,18 +2,24 @@
 #include <string.h>
 
 void main() {
-char first[20], middle[20], last[20];
+char first[60], middle[20], last[20];
+
+//fgets(first, sizeof(first) , stdin);
+
 printf("enter first name: ");
-fgets(first, sizeof(first) , stdin);
+gets(first);
+
 printf("enter middle name: ");
-fgets(middle, sizeof(middle), stdin);
+gets(middle);
+
 printf("enter last name: ");
-fgets(last, sizeof(last) , stdin);
+gets(last);
 
+
+strcat(first, " ");
 strcat(first, middle);
+strcat(first, " ");
 strcat(first, last);
-first[strcspn(first, "\n")] = ' ';
-first[strcspn(first, "\n")] = ' ';
 
-printf("%s", first);
+printf("%s\n", first);
 }
